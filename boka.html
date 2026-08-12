@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <!-- ====== DOKUMENTETS HUVUD ====== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boka | Athene Palace</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ====== LOGOTYP ====== -->
+    <div class="logo-container">
+        <div class="logo-placeholder">
+            <img src="images/logo.webp" alt="Athene Palace logo" />
+        </div>
+    </div>
+
+    <!-- ====== NAVIGERING ====== -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Hemsida</a></li>
+            <li><a href="boka.html" class="active">Boka</a></li>
+            <li><a href="om-boende.html">Om boende</a></li>
+            <li><a href="kontakta.html">Kontakta</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">☰</button>
+    </nav>
+
+    <!-- ====== RUBRIK ====== -->
+    <section class="booking-header">
+        <h1>Tillgängliga rum</h1>
+    </section>
+
+    <!-- ====== SÖKFILTER ====== -->
+    <section class="booking-filters">
+        <div class="filter-group">
+            <div class="filter-item">
+                <label for="startdate">📅 Startdatum</label>
+                <input type="date" id="startdate" value="2026-06-29" />
+            </div>
+            <div class="filter-item">
+                <label for="enddate">📅 Slutdatum</label>
+                <input type="date" id="enddate" value="2026-07-20" />
+            </div>
+            <div class="filter-item">
+                <label for="guests">👤 Gäster</label>
+                <select id="guests">
+                    <option value="1">1 resenär, 1 rum</option>
+                    <option value="2" selected>2 resenärer, 1 rum</option>
+                    <option value="3">3 resenärer, 1 rum</option>
+                    <option value="4">4 resenärer, 2 rum</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== RUM ====== -->
+    <section class="rooms-wrapper">
+        <div class="rooms-container">
+
+            <!-- Rum 1 -->
+            <div class="room-card" data-room="1">
+                <div class="room-card-images">
+                    <img src="images/room1-1.webp" alt="Rum 1 bild 1" />
+                    <img src="images/room1-2.webp" alt="Rum 1 bild 2" />
+                </div>
+                <div class="room-card-content">
+                    <h3>Du har visat intresse för</h3>
+                    <ul>
+                        <li>✅ Gratis frukost</li>
+                        <li>✅ Avgiftsfri parkering</li>
+                        <li>✅ 27 kvadratmeter</li>
+                        <li>✅ 3 sovplatser</li>
+                        <li>✅ 1 dubbelsäng ELLER 2 enkelsängar</li>
+                        <li>✅ Gratis wi-fi</li>
+                    </ul>
+                    <a href="#" class="more-info">Mer information ></a>
+                    <button class="book-room-btn" data-room="1">Boka</button>
+                </div>
+            </div>
+
+            <!-- Rum 2 -->
+            <div class="room-card premium" data-room="2">
+                <div class="room-card-images">
+                    <img src="images/room2-1.webp" alt="Rum 2 bild 1" />
+                    <img src="images/room2-2.webp" alt="Rum 2 bild 2" />
+                </div>
+                <div class="room-card-content">
+                    <h3>Premium-rum (Comfort)</h3>
+                    <p class="rating">⭐⭐⭐⭐⭐ Enastående & recensioner</p>
+                    <ul>
+                        <li>✅ Gratis frukost</li>
+                        <li>✅ Avgiftsfri parkering</li>
+                        <li>✅ 27 kvadratmeter</li>
+                        <li>✅ 3 sovplatser</li>
+                        <li>✅ 1 dubbelsäng ELLER 2 enkelsängar</li>
+                        <li>✅ Gratis wi-fi</li>
+                    </ul>
+                    <a href="#" class="more-info">Mer information ></a>
+                    <button class="book-room-btn" data-room="2">Boka</button>
+                </div>
+            </div>
+
+            <!-- Rum 3 -->
+            <div class="room-card premium-pool" data-room="3">
+                <div class="room-card-images">
+                    <img src="images/room3-1.webp" alt="Rum 3 bild 1" />
+                    <img src="images/room3-2.webp" alt="Rum 3 bild 2" />
+                </div>
+                <div class="room-card-content">
+                    <h3>Premium-rum - utsikt mot poolen (Classic)</h3>
+                    <ul>
+                        <li>✅ Gratis frukost</li>
+                        <li>✅ Avgiftsfri parkering</li>
+                        <li>✅ 32 kvadratmeter</li>
+                        <li>✅ 1 sovrum</li>
+                        <li>✅ 3 sovplatser</li>
+                        <li>✅ 1 dubbelsäng</li>
+                        <li>✅ Gratis wi-fi</li>
+                    </ul>
+                    <p class="extra-features">Te-/kaffebryggare • Smart-tv</p>
+                    <a href="#" class="more-info">Mer information ></a>
+                    <button class="book-room-btn" data-room="3">Boka</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ====== 404 OVERLAY ====== -->
+    <div class="error-overlay" id="errorOverlay">
+        <div class="error-content">
+            <h1>404</h1>
+            <h2>Sidan kunde inte hittas</h2>
+            <p>Något gick fel. Du omdirigeras tillbaka...</p>
+        </div>
+    </div>
+
+    <!-- ====== SIDFOT ====== -->
+    <footer>
+        <p>@Athene.Palace 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

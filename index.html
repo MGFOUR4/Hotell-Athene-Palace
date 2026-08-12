@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <!-- ====== DOKUMENTETS HUVUD ====== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Athene Palace</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ====== LOGOTYP ====== -->
+    <div class="logo-container">
+        <div class="logo-placeholder">
+            <img src="images/logo.webp" alt="Athene Palace logo" />
+        </div>
+    </div>
+
+    <!-- ====== NAVIGERING ====== -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html" class="active">Hemsida</a></li>
+            <li><a href="boka.html">Boka</a></li>
+            <li><a href="om-boende.html">Om boende</a></li>
+            <li><a href="kontakta.html">Kontakta</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">☰</button>
+    </nav>
+
+    <!-- ====== BILDGALLERI ====== -->
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <div class="gallery-main">
+                <img src="images/main-image.webp" alt="Huvudbild Athene Palace" />
+            </div>
+            <div class="gallery-grid">
+                <img src="images/thumb1.webp" alt="Bild 1" />
+                <img src="images/thumb2.webp" alt="Bild 2" />
+                <img src="images/thumb3.webp" alt="Bild 3" />
+                <img src="images/thumb4.webp" alt="Bild 4" class="open-gallery" id="openGalleryBtn" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== BESKRIVNING ====== -->
+    <section class="description-section">
+        <div class="description-box">
+            <h2>Athene Palace Congress & Spa</h2>
+            <p class="subtitle">Livfull elegans vid Ioanninas entré</p>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+            <p class="description-text">
+                Vackra orange och gula blommor pryder denna fridfulla, pittoreska fastighet vid infarten till Ioannina,
+                vilket skapar en livlig och lyxig atmosfär. Njut av rymliga rum, en trevlig reception och gott om
+                parkeringsplatser på plats, allt kompletterat av exceptionell service och härliga matalternativ.
+            </p>
+        </div>
+    </section>
+
+    <!-- ====== LIGHTBOX ====== -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="close-lightbox" id="closeLightbox">✕</button>
+            <div class="lightbox-grid">
+                <img src="images/main-image.webp" alt="Bild 1" />
+                <img src="images/thumb1.webp" alt="Bild 2" />
+                <img src="images/thumb2.webp" alt="Bild 3" />
+                <img src="images/thumb3.webp" alt="Bild 4" />
+                <img src="images/thumb4.webp" alt="Bild 5" />
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== SIDFOT ====== -->
+    <footer>
+        <p>@Athene.Palace 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
